@@ -17,6 +17,7 @@ namespace Acme.Biz
         public Product()
         {
             string[] colorOptions = { "Red", "Espresso", "White", "Navy" };
+            //var colorOptions = new List<string>() { "Red", "Espresso", "White", "Navy" 
 
             var brownIndex = Array.IndexOf(colorOptions, "Espresso");
             colorOptions.SetValue("Blue", 3);

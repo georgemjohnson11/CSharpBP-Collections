@@ -19,7 +19,7 @@ namespace Acme.Biz.Tests
             // Arrange
             var currentProduct = new Product(1, "Saw", "");
             currentProduct.Cost = 50m;
-            var expected = 55m;
+            var expected = new OperationResult<Decimal>(55m, "");
 
             // Act
             var actual = currentProduct.CalculateSuggestedPrice(10m);
